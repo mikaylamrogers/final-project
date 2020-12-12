@@ -17,12 +17,14 @@ function Home() {
             }); 
     }, []);
 
+    console.log({listingAPIData});
+
     return (
         <div>
             <h1>hi</h1>
             {listingAPIData.map((item, i) => (
                 <div key={i}>
-                    <p>Id: {item.listingId}</p>
+                    <p>Iddd: {item.listingId}</p>
                     <p>Name: {item.listingName}</p>
                     <p>Author: {item.listingAuthor}</p>
                 </div>
