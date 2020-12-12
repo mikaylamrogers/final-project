@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-// changed to PRODUCT ID/NAME/AUTHOR/AUTHORID/DESCRIPTION (array)...
+// change to PRODUCT ID/NAME/AUTHOR/AUTHORID/DESCRIPTION (array)...
 const sampleJSON = [
     {
         listingId: '',
@@ -12,7 +12,7 @@ const sampleJSON = [
             name: '',
             location: '',
         }]
-    }
+    },
 ];
 
 router.get('/', (req, res) => res.send(sampleJSON));
